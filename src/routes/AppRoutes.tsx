@@ -8,6 +8,7 @@ import Layout from "@/layout/Layout";
 import PublicRoute from "./PublicRoute";
 import BlogDetails from "@/pages/BlogDetails";
 import UserBlogList from "@/pages/UserBlogList";
+import PageNotFound from "@/pages/PageNotFound";
 
 function AppRoutes() {
   return (
@@ -59,6 +60,7 @@ function AppRoutes() {
             </PublicRoute>
           }
         />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
   );
